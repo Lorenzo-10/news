@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News Today</title>
+   <!-- Add the favicon -->
+   <link rel="icon" type="image/jpg" href="OL news.jpg">
   <style>
     body {
       background-image: url(wall.jpeg );
@@ -91,15 +93,32 @@
 </head>
 <body>
 <header>
+  <a href="Home.html">
   <img src="OL news.jpg" alt="News Today Logo" style="height: 50px; margin-right: 20px;">
+  </a>
   <h1>News Today</h1>
   <div class="nav-links">
-    <a href="index.html" style="text-decoration: underline;">Home</a>
+    <a href="Home.html" style="text-decoration: underline;">Home</a>
     <a href="world.html">World</a>
     <a href="tech.html">Tech</a>
     <a href="sports.html">Sports</a>
     <a href="entertainment.html">Entertainment</a>
   </div>
+   <!-- Search Bar -->
+   <form id="search-form" action="#" style="display: flex; align-items: center; margin: 20px 0;">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search World, Sports, Entertainment, Tech..."
+      style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;"
+    />
+    <button
+      type="submit"
+      style="margin-left: 10px; padding: 10px 15px; background-color: #0073e6; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+      Search
+    </button>
+  </form>
+  
 </header>
 
 <div class="main-content">
@@ -140,5 +159,6 @@
     </div>
   </div>
 </div>
+<a href="search.js"></a>
 </body>
 </html>
